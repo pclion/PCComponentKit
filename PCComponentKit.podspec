@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.3"
   s.summary      = "iOS常用的UI组件库"
 
-  s.description  = "iOS常用的UI组件库"
+  s.description  = "---- iOS常用的UI组件库 ----"
 
   s.homepage     = "https://github.com/pclion/PCComponentKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/pclion/PCComponentKit.git", :tag => "0.0.3" }
 
 
-  s.source_files  = "PCComponentKitDemo/PCComponentKit/*"
+  s.source_files  = "PCComponentKitDemo/PCComponentKitDemo/PCComponentKit/*"
 
   # s.public_header_files = "Classes/**/*.h"
 
