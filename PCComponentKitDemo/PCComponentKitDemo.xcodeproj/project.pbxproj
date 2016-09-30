@@ -15,6 +15,7 @@
 		9847EF7D1D9E321C00D7E177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9847EF7B1D9E321C00D7E177 /* LaunchScreen.storyboard */; };
 		9847EF881D9E321C00D7E177 /* PCComponentKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9847EF871D9E321C00D7E177 /* PCComponentKitDemoTests.m */; };
 		9847EF931D9E321C00D7E177 /* PCComponentKitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9847EF921D9E321C00D7E177 /* PCComponentKitDemoUITests.m */; };
+		9847EFA31D9E383A00D7E177 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9847EFA21D9E383A00D7E177 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		9847EF8E1D9E321C00D7E177 /* PCComponentKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCComponentKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9847EF921D9E321C00D7E177 /* PCComponentKitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCComponentKitDemoUITests.m; sourceTree = "<group>"; };
 		9847EF941D9E321C00D7E177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9847EFA11D9E383A00D7E177 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		9847EFA21D9E383A00D7E177 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		9847EF6C1D9E321C00D7E177 /* PCComponentKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9847EFA01D9E381F00D7E177 /* PCComponentKit */,
 				9847EF701D9E321C00D7E177 /* AppDelegate.h */,
 				9847EF711D9E321C00D7E177 /* AppDelegate.m */,
 				9847EF731D9E321C00D7E177 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				9847EF941D9E321C00D7E177 /* Info.plist */,
 			);
 			path = PCComponentKitDemoUITests;
+			sourceTree = "<group>";
+		};
+		9847EFA01D9E381F00D7E177 /* PCComponentKit */ = {
+			isa = PBXGroup;
+			children = (
+				9847EFA11D9E383A00D7E177 /* TestViewController.h */,
+				9847EFA21D9E383A00D7E177 /* TestViewController.m */,
+			);
+			path = PCComponentKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 			files = (
 				9847EF751D9E321C00D7E177 /* ViewController.m in Sources */,
 				9847EF721D9E321C00D7E177 /* AppDelegate.m in Sources */,
+				9847EFA31D9E383A00D7E177 /* TestViewController.m in Sources */,
 				9847EF6F1D9E321C00D7E177 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +510,7 @@
 				9847EF991D9E321C00D7E177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9847EF9A1D9E321C00D7E177 /* Build configuration list for PBXNativeTarget "PCComponentKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				9847EF9C1D9E321C00D7E177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9847EF9D1D9E321C00D7E177 /* Build configuration list for PBXNativeTarget "PCComponentKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +528,7 @@
 				9847EF9F1D9E321C00D7E177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

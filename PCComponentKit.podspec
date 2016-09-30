@@ -10,11 +10,9 @@ Pod::Spec.new do |s|
 
   s.name         = "PCComponentKit"
   s.version      = "0.0.1"
-  s.summary      = "A short description of PCComponentKit."
+  s.summary      = "iOS常用的UI组件库"
 
-  s.description  = <<-DESC
-                    iOS常用的UI组件库
-                   DESC
+  s.description  = "iOS常用的UI组件库"
 
   s.homepage     = "https://github.com/pclion/PCComponentKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
