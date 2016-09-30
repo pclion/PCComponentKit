@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PCComponentKit"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "iOS常用的UI组件库"
 
   s.description  = "---- iOS常用的UI组件库 ----"
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
-  s.source       = { :git => "https://github.com/pclion/PCComponentKit.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/pclion/PCComponentKit.git", :tag => s.version }
 
 
   s.source_files  = "PCComponentKitDemo/PCComponentKitDemo/PCComponentKit/*"
