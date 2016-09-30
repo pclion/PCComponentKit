@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PCComponentKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "iOS常用的UI组件库"
 
   s.description  = "iOS常用的UI组件库"
