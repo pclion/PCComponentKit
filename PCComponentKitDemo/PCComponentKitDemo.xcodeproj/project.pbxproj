@@ -26,6 +26,7 @@
 		98E2F35E1DB4EC18006E04EB /* PCCellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F35D1DB4EC18006E04EB /* PCCellInfo.m */; };
 		98E2F3611DB4ECFB006E04EB /* NSString+ReuseIdentifer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F3601DB4ECFB006E04EB /* NSString+ReuseIdentifer.m */; };
 		98E2F3641DB4ED39006E04EB /* NSArray+CellInfoTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F3631DB4ED39006E04EB /* NSArray+CellInfoTransfer.m */; };
+		98E2F3671DB4F6BD006E04EB /* PCCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F3661DB4F6BD006E04EB /* PCCategoryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		98E2F3601DB4ECFB006E04EB /* NSString+ReuseIdentifer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ReuseIdentifer.m"; sourceTree = "<group>"; };
 		98E2F3621DB4ED39006E04EB /* NSArray+CellInfoTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CellInfoTransfer.h"; sourceTree = "<group>"; };
 		98E2F3631DB4ED39006E04EB /* NSArray+CellInfoTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CellInfoTransfer.m"; sourceTree = "<group>"; };
+		98E2F3651DB4F6BD006E04EB /* PCCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCategoryCell.h; sourceTree = "<group>"; };
+		98E2F3661DB4F6BD006E04EB /* PCCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCategoryCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				9847EF711D9E321C00D7E177 /* AppDelegate.m */,
 				9847EF731D9E321C00D7E177 /* ViewController.h */,
 				9847EF741D9E321C00D7E177 /* ViewController.m */,
+				98E2F3651DB4F6BD006E04EB /* PCCategoryCell.h */,
+				98E2F3661DB4F6BD006E04EB /* PCCategoryCell.m */,
 				9847EF761D9E321C00D7E177 /* Main.storyboard */,
 				9847EF791D9E321C00D7E177 /* Assets.xcassets */,
 				9847EF7B1D9E321C00D7E177 /* LaunchScreen.storyboard */,
@@ -332,6 +337,7 @@
 				TargetAttributes = {
 					9847EF691D9E321C00D7E177 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FM4A2EYEUJ;
 					};
 					9847EF821D9E321C00D7E177 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -443,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E2F3671DB4F6BD006E04EB /* PCCategoryCell.m in Sources */,
 				98E2F3521DB4EBC2006E04EB /* PCBaseLayout.m in Sources */,
 				98E2F3611DB4ECFB006E04EB /* NSString+ReuseIdentifer.m in Sources */,
 				98E2F3581DB4EBFB006E04EB /* PCBaseInfo.m in Sources */,
@@ -597,7 +604,9 @@
 			baseConfigurationReference = 1DA1B54F5FEDEDC8FAC9A0A2 /* Pods-PCComponentKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FM4A2EYEUJ;
 				INFOPLIST_FILE = PCComponentKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alibaba.PCComponentKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -609,7 +618,9 @@
 			baseConfigurationReference = 5D7FDFB3CD21A71045EBB897 /* Pods-PCComponentKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FM4A2EYEUJ;
 				INFOPLIST_FILE = PCComponentKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alibaba.PCComponentKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

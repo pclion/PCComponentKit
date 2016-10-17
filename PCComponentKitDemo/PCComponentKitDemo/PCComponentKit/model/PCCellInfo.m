@@ -10,4 +10,9 @@
 
 @implementation PCCellInfo
 
+- (NSString *)cellIdentifer
+{
+    return [self.cellClassName reuseViewIdentifier];
+}
+
 @end

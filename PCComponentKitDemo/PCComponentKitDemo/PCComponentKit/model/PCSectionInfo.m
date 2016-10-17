@@ -10,4 +10,14 @@
 
 @implementation PCSectionInfo
 
+- (NSString *)headerIdentifer
+{
+    return [self.headerClassName reuseViewIdentifier];
+}
+
+- (NSString *)footerIdentifer
+{
+    return [self.footerClassName reuseViewIdentifier];
+}
+
 @end
