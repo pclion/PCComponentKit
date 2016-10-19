@@ -92,8 +92,6 @@
     PCSectionInfo *sectionInfo = self.dataArray[section];
     if (sectionInfo.headerClassName) {
         header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[sectionInfo headerIdentifer]];
-    } else if (self.easyHeaderView) {
-        header = self.easyHeaderView;
     }
     if (self.headerConfigure) {
         self.headerConfigure(header,[NSIndexPath indexPathForRow:0 inSection:section],sectionInfo);
@@ -107,8 +105,6 @@
     PCSectionInfo *sectionInfo = self.dataArray[section];
     if (sectionInfo.footerClassName) {
         footer = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[sectionInfo footerIdentifer]];
-    } else if (self.easyFooterView) {
-        footer = self.easyFooterView;
     }
     if (self.footerConfigure) {
         self.footerConfigure(footer,[NSIndexPath indexPathForRow:0 inSection:section],sectionInfo);

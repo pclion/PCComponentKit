@@ -10,6 +10,9 @@
 #import "PCSectionInfo.h"
 #import "PCCellInfo.h"
 
+/*
+ 转化数据为sectioninfo和cellinfo类
+ */
 @interface NSArray (CellInfoTransfer)
 
 - (NSArray *)enumerateObjectsToSectionInfoUsingBlock:(void(^)(id obj, NSInteger idx, PCSectionInfo *sectionInfo))sectionBlock;

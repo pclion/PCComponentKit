@@ -15,23 +15,26 @@ typedef void(^ConfigureData)(UITableViewCell *cell, NSIndexPath *indexpath, PCCe
 typedef void(^SectionConfigure)(UIView *view, NSIndexPath *indexpath, PCSectionInfo *sectionInfo);
 typedef void(^CellDidSelected)(PCTableViewLayout *layout, NSIndexPath *indexpath, PCCellInfo *cellInfo);
 
+/*
+ tableview回调封装类
+ */
 @interface PCTableViewLayout : PCBaseLayout<UITableViewDataSource, UITableViewDelegate, UITableViewDataSourcePrefetching>
 
 - (instancetype)initWithTableView:(UITableView *)tableView;
 
-@property (nonatomic, weak) UITableView *tableView;
-@property (nonatomic, strong) UIView *easyHeaderView;
-@property (nonatomic, strong) UIView *easyFooterView;
+@property (nonatomic, weak) UITableView *tableView;//绑定的tableview
 
-@property (nonatomic, strong) NSArray<PCSectionInfo *> *dataArray;
-@property (nonatomic, copy) ConfigureData cellConfigure;
-@property (nonatomic, copy) CellDidSelected didSelected;
-@property (nonatomic, copy) SectionConfigure headerConfigure;
-@property (nonatomic, copy) SectionConfigure footerConfigure;
+@property (nonatomic, strong) NSArray<PCSectionInfo *> *dataArray;//数据源
+@property (nonatomic, copy) ConfigureData cellConfigure;//cell配置block
+@property (nonatomic, copy) CellDidSelected didSelected;//cell选中block
+@property (nonatomic, copy) SectionConfigure headerConfigure;//sectionHeader配置block
+@property (nonatomic, copy) SectionConfigure footerConfigure;//sectionFooter配置block
 
+//注册cell
 - (void)registerCellNibName:(NSString *)nibName;
 - (void)registerCellClassName:(NSString *)className;
 
+//注册headerfooterview
 - (void)registerHeaderFooterViewNibName:(NSString *)nibName;
 - (void)registerHeaderFooterViewClassName:(NSString *)className;
 
