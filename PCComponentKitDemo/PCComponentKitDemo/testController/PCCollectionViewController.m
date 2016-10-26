@@ -45,7 +45,7 @@
     self.layout.cellConfigure = ^(UIView *cell, NSIndexPath *indexpath, PCCellInfo *cellInfo) {
         if ([cell isKindOfClass:[PCTestItemCell class]]) {
             PCTestItemCell * testItemCell = (PCTestItemCell *)cell;
-            testItemCell.contentView.backgroundColor = cellInfo.dataDict[@"color"];
+            testItemCell.contentView.backgroundColor = [cellInfo valueForKey:@"color"];
         }
     };
     self.layout.didSelected = ^(NSIndexPath *indexpath, PCCellInfo *cellInfo) {
