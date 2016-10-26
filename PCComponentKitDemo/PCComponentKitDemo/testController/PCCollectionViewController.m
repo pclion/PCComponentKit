@@ -32,7 +32,7 @@
     NSArray *itemArray = @[[UIColor redColor],[UIColor grayColor],[UIColor greenColor],[UIColor brownColor],[UIColor blueColor],[UIColor blackColor],[UIColor purpleColor]];
     NSArray *dataArray = [@[itemArray] enumerateObjectsToSectionInfoUsingBlock:^(NSArray *obj, NSInteger idx, PCSectionInfo *sectionInfo) {
         NSArray *cellInfoArray = [obj enumerateObjectsToCellInfoUsingBlock:^(NSString *obj, NSInteger idx, PCCellInfo *cellInfo) {
-            cellInfo.dataDict = @{@"color": obj};
+            cellInfo.json = @{@"color": obj};
             cellInfo.cellClassName = NSStringFromClass([PCTestItemCell class]);
             cellInfo.itemSize = CGSizeMake(60, 60);
         }];

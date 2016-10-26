@@ -12,4 +12,6 @@
 
 - (NSString *)reuseViewIdentifier;
 
+- (BOOL)isPureDigit;
+
 @end

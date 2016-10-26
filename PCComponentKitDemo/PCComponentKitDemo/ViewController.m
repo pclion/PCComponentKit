@@ -34,7 +34,7 @@
     NSArray *itemArray = @[@"tableview",@"collectionview",@"customview",@"component",@"segementview",@"animation",@"datasource",@"navigationcontroller",@"basecontroller"];
     NSArray *dataArray = [@[itemArray] enumerateObjectsToSectionInfoUsingBlock:^(NSArray *obj, NSInteger idx, PCSectionInfo *sectionInfo) {
         NSArray *cellInfoArray = [obj enumerateObjectsToCellInfoUsingBlock:^(NSString *obj, NSInteger idx, PCCellInfo *cellInfo) {
-            cellInfo.dataDict = @{@"title": obj};
+            cellInfo.json = @{@"title": obj, @"testarr": @[@{@"a": @"12"}, @{@"b": @"5"}, @{@"c": @"78"}], @"testdict": @{@"innerdict": @{@"abc": @"dgdgg", @"ccc": @"ggfgdd"}}};
             cellInfo.cellClassName = NSStringFromClass([PCCategoryCell class]);
             cellInfo.itemSize = CGSizeMake(CGRectGetWidth([UIScreen mainScreen].bounds), 60);
         }];
@@ -44,16 +44,18 @@
     self.layout.cellConfigure = ^(UIView *cell, NSIndexPath *indexpath, PCCellInfo *cellInfo) {
         if ([cell isKindOfClass:[PCCategoryCell class]]) {
             PCCategoryCell * categoryCell = (PCCategoryCell *)cell;
-            categoryCell.titleLabel.text = cellInfo.dataDict[@"title"];
+            categoryCell.titleLabel.text = cellInfo.json[@"title"];
+            [cellInfo setValue:@"aaa" forKey:@"testarr->10"];
+            NSLog(@"%@", [cellInfo valueForKey:@"testarr->10"]);
         }
     };
     self.layout.didSelected = ^(NSIndexPath *indexpath, PCCellInfo *cellInfo) {
         [wSelf.layout.tableView deselectRowAtIndexPath:indexpath animated:YES];
-        if ([cellInfo.dataDict[@"title"] isEqualToString:@"tableview"]) {
+        if ([cellInfo.json[@"title"] isEqualToString:@"tableview"]) {
             UIStoryboard *board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             UIViewController *controller = [board instantiateViewControllerWithIdentifier:NSStringFromClass([PCCategoryViewController class])];
             [wSelf.navigationController pushViewController:controller animated:YES];
-        } else if ([cellInfo.dataDict[@"title"] isEqualToString:@"collectionview"]) {
+        } else if ([cellInfo.json[@"title"] isEqualToString:@"collectionview"]) {
             UIStoryboard *board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             UIViewController *controller = [board instantiateViewControllerWithIdentifier:NSStringFromClass([PCCollectionViewController class])];
             [wSelf.navigationController pushViewController:controller animated:YES];

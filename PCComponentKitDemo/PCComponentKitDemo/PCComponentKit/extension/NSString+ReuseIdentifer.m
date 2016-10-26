@@ -15,4 +15,14 @@
     return [NSString stringWithFormat:@"%@", self];
 }
 
+- (BOOL)isPureDigit
+{
+    NSString *string = [self stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+    if(string.length > 0)
+    {
+        return NO;
+    }
+    return YES;
+}
+
 @end

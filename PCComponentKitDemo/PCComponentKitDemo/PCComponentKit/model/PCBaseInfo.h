@@ -11,6 +11,6 @@
 
 @interface PCBaseInfo : NSObject
 
-@property (nonatomic, strong) NSDictionary *dataDict;//自定义数据
+@property (nonatomic, strong) id json;//自定义数据
 
 @end
