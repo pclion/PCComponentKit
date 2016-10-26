@@ -1,13 +1,13 @@
 //
-//  PCBaseLayout.h
+//  PCTestItemCell.h
 //  PCComponentKitDemo
 //
-//  Created by peichuang on 16/10/17.
+//  Created by peichuang on 16/10/26.
 //  Copyright © 2016年 peichuang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface PCBaseLayout : NSObject
+@interface PCTestItemCell : UICollectionViewCell
 
 @end

@@ -93,8 +93,8 @@
     if (sectionInfo.headerClassName) {
         header = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[sectionInfo headerIdentifer]];
     }
-    if (self.headerConfigure) {
-        self.headerConfigure(header,[NSIndexPath indexPathForRow:0 inSection:section],sectionInfo);
+    if (self.headerFooterConfigure) {
+        self.headerFooterConfigure(header, PCSectionTypeHeader,[NSIndexPath indexPathForRow:0 inSection:section],sectionInfo);
     }
     return header;
 }
@@ -106,8 +106,8 @@
     if (sectionInfo.footerClassName) {
         footer = [tableView dequeueReusableHeaderFooterViewWithIdentifier:[sectionInfo footerIdentifer]];
     }
-    if (self.footerConfigure) {
-        self.footerConfigure(footer,[NSIndexPath indexPathForRow:0 inSection:section],sectionInfo);
+    if (self.headerFooterConfigure) {
+        self.headerFooterConfigure(footer, PCSectionTypeFooter, [NSIndexPath indexPathForRow:0 inSection:section],sectionInfo);
     }
     return footer;
 }
@@ -117,7 +117,7 @@
     PCSectionInfo *sectionInfo = self.dataArray[indexPath.section];
     PCCellInfo *cellInfo = sectionInfo.cellInfoArray[indexPath.row];
     if (self.didSelected) {
-        self.didSelected(self,indexPath,cellInfo);
+        self.didSelected(indexPath,cellInfo);
     }
 }
 

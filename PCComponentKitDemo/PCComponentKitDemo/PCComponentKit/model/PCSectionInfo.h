@@ -19,4 +19,8 @@
 @property (nonatomic) CGSize sectionHeaderSize;//headerSize，在tableview里面只需要使用到size.height
 @property (nonatomic) CGSize sectionFooterSize;//footerSize，在tableview里面只需要使用到size.height
 
+//collectionview使用位置属性
+@property (nonatomic) CGFloat minimumLineSpacing;
+@property (nonatomic) CGFloat minimumInteritemSpacing;
+
 @end

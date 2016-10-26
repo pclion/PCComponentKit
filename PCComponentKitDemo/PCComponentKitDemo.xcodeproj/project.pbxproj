@@ -27,6 +27,11 @@
 		98E2F3611DB4ECFB006E04EB /* NSString+ReuseIdentifer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F3601DB4ECFB006E04EB /* NSString+ReuseIdentifer.m */; };
 		98E2F3641DB4ED39006E04EB /* NSArray+CellInfoTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F3631DB4ED39006E04EB /* NSArray+CellInfoTransfer.m */; };
 		98E2F3671DB4F6BD006E04EB /* PCCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F3661DB4F6BD006E04EB /* PCCategoryCell.m */; };
+		98E2F36B1DB78D1C006E04EB /* PCCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F36A1DB78D1C006E04EB /* PCCategoryViewController.m */; };
+		98E2F36E1DBF94B2006E04EB /* PCCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F36D1DBF94B2006E04EB /* PCCollectionViewLayout.m */; };
+		98E2F3751DBF9C12006E04EB /* PCListLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F3741DBF9C12006E04EB /* PCListLayout.m */; };
+		98E2F3791DC037C8006E04EB /* PCCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F3781DC037C8006E04EB /* PCCollectionViewController.m */; };
+		98E2F37D1DC038ED006E04EB /* PCTestItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E2F37C1DC038ED006E04EB /* PCTestItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +93,16 @@
 		98E2F3631DB4ED39006E04EB /* NSArray+CellInfoTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CellInfoTransfer.m"; sourceTree = "<group>"; };
 		98E2F3651DB4F6BD006E04EB /* PCCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCategoryCell.h; sourceTree = "<group>"; };
 		98E2F3661DB4F6BD006E04EB /* PCCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCategoryCell.m; sourceTree = "<group>"; };
+		98E2F3691DB78D1C006E04EB /* PCCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCategoryViewController.h; sourceTree = "<group>"; };
+		98E2F36A1DB78D1C006E04EB /* PCCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCategoryViewController.m; sourceTree = "<group>"; };
+		98E2F36C1DBF94B2006E04EB /* PCCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCollectionViewLayout.h; sourceTree = "<group>"; };
+		98E2F36D1DBF94B2006E04EB /* PCCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCollectionViewLayout.m; sourceTree = "<group>"; };
+		98E2F3731DBF9C12006E04EB /* PCListLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCListLayout.h; sourceTree = "<group>"; };
+		98E2F3741DBF9C12006E04EB /* PCListLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCListLayout.m; sourceTree = "<group>"; };
+		98E2F3771DC037C8006E04EB /* PCCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCollectionViewController.h; sourceTree = "<group>"; };
+		98E2F3781DC037C8006E04EB /* PCCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCollectionViewController.m; sourceTree = "<group>"; };
+		98E2F37B1DC038ED006E04EB /* PCTestItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCTestItemCell.h; sourceTree = "<group>"; };
+		98E2F37C1DC038ED006E04EB /* PCTestItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCTestItemCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				9847EFA01D9E381F00D7E177 /* PCComponentKit */,
+				98E2F3681DB78CAD006E04EB /* testController */,
 				9847EF701D9E321C00D7E177 /* AppDelegate.h */,
 				9847EF711D9E321C00D7E177 /* AppDelegate.m */,
 				9847EF731D9E321C00D7E177 /* ViewController.h */,
@@ -239,8 +255,12 @@
 			children = (
 				98E2F3501DB4EBC2006E04EB /* PCBaseLayout.h */,
 				98E2F3511DB4EBC2006E04EB /* PCBaseLayout.m */,
+				98E2F3731DBF9C12006E04EB /* PCListLayout.h */,
+				98E2F3741DBF9C12006E04EB /* PCListLayout.m */,
 				98E2F3531DB4EBD7006E04EB /* PCTableViewLayout.h */,
 				98E2F3541DB4EBD7006E04EB /* PCTableViewLayout.m */,
+				98E2F36C1DBF94B2006E04EB /* PCCollectionViewLayout.h */,
+				98E2F36D1DBF94B2006E04EB /* PCCollectionViewLayout.m */,
 			);
 			path = layout;
 			sourceTree = "<group>";
@@ -265,6 +285,27 @@
 				98E2F34B1DB4EB86006E04EB /* PCBaseView.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		98E2F3681DB78CAD006E04EB /* testController */ = {
+			isa = PBXGroup;
+			children = (
+				98E2F37A1DC038A6006E04EB /* view */,
+				98E2F3691DB78D1C006E04EB /* PCCategoryViewController.h */,
+				98E2F36A1DB78D1C006E04EB /* PCCategoryViewController.m */,
+				98E2F3771DC037C8006E04EB /* PCCollectionViewController.h */,
+				98E2F3781DC037C8006E04EB /* PCCollectionViewController.m */,
+			);
+			path = testController;
+			sourceTree = "<group>";
+		};
+		98E2F37A1DC038A6006E04EB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				98E2F37B1DC038ED006E04EB /* PCTestItemCell.h */,
+				98E2F37C1DC038ED006E04EB /* PCTestItemCell.m */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,8 +492,11 @@
 			files = (
 				98E2F3671DB4F6BD006E04EB /* PCCategoryCell.m in Sources */,
 				98E2F3521DB4EBC2006E04EB /* PCBaseLayout.m in Sources */,
+				98E2F3751DBF9C12006E04EB /* PCListLayout.m in Sources */,
 				98E2F3611DB4ECFB006E04EB /* NSString+ReuseIdentifer.m in Sources */,
+				98E2F37D1DC038ED006E04EB /* PCTestItemCell.m in Sources */,
 				98E2F3581DB4EBFB006E04EB /* PCBaseInfo.m in Sources */,
+				98E2F3791DC037C8006E04EB /* PCCollectionViewController.m in Sources */,
 				9847EF751D9E321C00D7E177 /* ViewController.m in Sources */,
 				98E2F3551DB4EBD7006E04EB /* PCTableViewLayout.m in Sources */,
 				98E2F34C1DB4EB86006E04EB /* PCBaseView.m in Sources */,
@@ -460,8 +504,10 @@
 				98E2F35B1DB4EC0C006E04EB /* PCSectionInfo.m in Sources */,
 				9847EF721D9E321C00D7E177 /* AppDelegate.m in Sources */,
 				98E2F35E1DB4EC18006E04EB /* PCCellInfo.m in Sources */,
+				98E2F36E1DBF94B2006E04EB /* PCCollectionViewLayout.m in Sources */,
 				9847EFA31D9E383A00D7E177 /* TestViewController.m in Sources */,
 				9847EF6F1D9E321C00D7E177 /* main.m in Sources */,
+				98E2F36B1DB78D1C006E04EB /* PCCategoryViewController.m in Sources */,
 				98E2F3641DB4ED39006E04EB /* NSArray+CellInfoTransfer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
