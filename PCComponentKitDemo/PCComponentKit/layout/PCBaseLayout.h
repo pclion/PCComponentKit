@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^cacheUpdateBlock)(id json);
+
 @interface PCBaseLayout : NSObject
+
+@property (nonatomic, strong) id originJson;//自定义数据
+@property (nonatomic, copy) cacheUpdateBlock block;//配置数据和缓存同步方法
+
+- (void)updateCache;
 
 @end

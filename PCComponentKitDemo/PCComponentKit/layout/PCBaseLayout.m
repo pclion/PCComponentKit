@@ -10,4 +10,11 @@
 
 @implementation PCBaseLayout
 
+- (void)updateCache
+{
+    if (self.block) {
+        self.block(self.originJson);
+    }
+}
+
 @end

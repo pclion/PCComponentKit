@@ -45,8 +45,8 @@
         if ([cell isKindOfClass:[PCCategoryCell class]]) {
             PCCategoryCell * categoryCell = (PCCategoryCell *)cell;
             categoryCell.titleLabel.text = cellInfo.json[@"title"];
-            [cellInfo setValue:@"aaa" forKey:@"testarr->10"];
-            NSLog(@"%@", [cellInfo valueForKey:@"testarr->10"]);
+            [cellInfo setValue:@"aaa" forKey:@"testarr->0"];
+            NSLog(@"%@", [cellInfo valueForKey:@"testarr->0"]);
         }
     };
     self.layout.didSelected = ^(NSIndexPath *indexpath, PCCellInfo *cellInfo) {

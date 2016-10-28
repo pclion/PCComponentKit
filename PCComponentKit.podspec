@@ -37,8 +37,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/pclion/PCComponentKit.git", :tag => s.version }
 
-
-  s.source_files  = "PCComponentKitDemo/PCComponentKit/*"
+  s.source_files  = "PCComponentKitDemo/PCComponentKit/**/*"
+  #s.source_files  = "PCComponentKitDemo/PCComponentKit/model/*"
+  #s.source_files  = "PCComponentKitDemo/PCComponentKit/layout/*"
 
   # s.public_header_files = "Classes/**/*.h"
 
